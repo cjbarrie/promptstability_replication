@@ -1,0 +1,3 @@
+model,cumulative_final_alpha,cumulative_final_ci_width,cumulative_run_count_to_estimate_stability,adjacent_mean_alpha,adjacent_sd_alpha,adjacent_share_below_threshold
+gpt-4o,0.9794767846481398,0.02078285955861292,8,0.986293128457304,0.027379476033938255,0.0
+deepseek-r1-8b,0.6034813968402511,0.09392995060267495,17,0.5798477302292656,0.1230709247994594,1.0

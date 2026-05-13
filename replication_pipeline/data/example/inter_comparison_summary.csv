@@ -1,0 +1,3 @@
+"model","mean_alpha","min_alpha","temperature_at_min_alpha","temperature_range_alpha","share_below_threshold"
+"gpt-4o",0.924233028873373,0.802097357026813,5,0.197902642973187,0
+"deepseek-r1-8b",0.386453590144551,0.0497142195435925,4,0.59304129878565,1
