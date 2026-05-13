@@ -25,9 +25,13 @@ distributed separately as:
 - `FROZEN_EXPORT_large_files.tar`
 
 The archive contains the heavyweight annotated and reannotated CSVs removed from
-this repo copy. The exact file list is recorded in:
+this repo copy. Download it here:
 
-- [LARGE_FILES_MANIFEST.txt](/Users/christopherbarrie/Dropbox/nyu_projects/promptstability/FROZEN_EXPORT/LARGE_FILES_MANIFEST.txt:1)
+- [FROZEN_EXPORT_large_files.tar](https://nyu.box.com/s/etfjj3rs4raw7kgu3tysvo8f18elxzq4)
+
+The exact file list is recorded in:
+
+- [LARGE_FILES_MANIFEST.txt](LARGE_FILES_MANIFEST.txt)
 
 After downloading the archive, extract it from the repository root:
 
@@ -44,7 +48,7 @@ That restores the heavyweight files into their expected locations under both:
 
 Recommended working directory:
 
-- `/Users/christopherbarrie/Dropbox/nyu_projects/promptstability`
+- the root of your cloned `promptstability_replication` repository
 
 Recommended Python executable:
 

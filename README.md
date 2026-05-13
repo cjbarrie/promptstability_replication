@@ -12,7 +12,11 @@ external archive:
 
 - `FROZEN_EXPORT_large_files.tar`
 
-See [LARGE_FILES_MANIFEST.txt](/Users/christopherbarrie/Dropbox/nyu_projects/promptstability/FROZEN_EXPORT/LARGE_FILES_MANIFEST.txt:1) for the exact file list that lives in the external bundle.
+Download the external bundle here:
+
+- [FROZEN_EXPORT_large_files.tar](https://nyu.box.com/s/etfjj3rs4raw7kgu3tysvo8f18elxzq4)
+
+See [LARGE_FILES_MANIFEST.txt](LARGE_FILES_MANIFEST.txt) for the exact file list that lives in the external bundle.
 
 To restore the repo to a fully self-contained state after downloading the
 archive, extract it from the repository root:
@@ -48,7 +52,7 @@ This canonical pipeline:
 - rebuilds the lightweight current outputs shipped in this repo
 - can use the external large-file archive to restore the full heavyweight rerun state when needed
 
-For full instructions, expected outputs, and partial-rerun examples, see [REPLICATION_RUNBOOK.md](/Users/christopherbarrie/Dropbox/nyu_projects/promptstability/REPLICATION_RUNBOOK.md:1).
+For full instructions, expected outputs, and partial-rerun examples, see [REPLICATION_RUNBOOK.md](REPLICATION_RUNBOOK.md).
 
 ## Legacy scripts
 

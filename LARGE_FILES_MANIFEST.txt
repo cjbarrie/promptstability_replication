@@ -3,8 +3,9 @@ outside the GitHub repo as:
 
 `FROZEN_EXPORT_large_files.tar`
 
-Once the external download URL is available, this file should be updated to
-point users there explicitly.
+Download URL:
+
+https://nyu.box.com/s/etfjj3rs4raw7kgu3tysvo8f18elxzq4
 
 Archive contents are listed relative to the repo root below.
 
