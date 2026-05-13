@@ -54,6 +54,10 @@ This canonical pipeline:
 
 For full instructions, expected outputs, and partial-rerun examples, see [REPLICATION_RUNBOOK.md](REPLICATION_RUNBOOK.md).
 
+## R walkthrough
+
+For a concrete run-through of how to use R for estimation with this replication package, see [R_example_guide.md](R_example_guide.md) together with the companion script [R_example.R](R_example.R). The guide walks through the R-side estimation workflow and shows how the shipped files can be used from an R session.
+
 ## Legacy scripts
 
 The original top-level scripts remain in place for historical continuity, but they are no longer the recommended rerun path.
