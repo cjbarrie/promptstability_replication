@@ -1,0 +1,19 @@
+# Data manipulation
+pandas
+
+# Plotting and visualization
+matplotlib
+seaborn
+termcolor
+
+# NLP models and utilities
+transformers
+openai
+simpledorff
+
+# Numerical computations
+numpy
+scipy
+
+# Parallel processing and system utilities
+concurrent-log-handler

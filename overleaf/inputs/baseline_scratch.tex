@@ -1,0 +1,60 @@
+\begin{lstlisting}[backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=Python, 
+    caption={Intra-prompt stability scratch function},
+    label=lst:intra-scratch]
+Function baseline_stochasticity(original_text, prompt_postfix, iterations, bootstrap_samples, plot, save_path, save_csv):
+
+    # Combine original text and prompt postfix to create the full prompt
+    prompt = original_text + " " + prompt_postfix
+
+    # Initialize a list to store all annotations
+    all_annotations = []
+
+    # Dictionary to store Krippendorff's Alpha (KA) scores
+    ka_scores = {}
+
+    # Repeat the process for a given number of iterations
+    For each iteration i in iterations:
+        annotations = []
+        # Annotate each piece of data using the annotation function
+        For each data point d in data:
+            annotation = annotate(d, prompt)
+            annotations.append({id, text, annotation, iteration: i})
+        all_annotations.extend(annotations)
+
+    # Convert all annotations to a DataFrame
+    all_annotated = convert_to_dataframe(all_annotations)
+
+    # Calculate KA scores using bootstrapping for increasing iterations
+    For each iteration i in 1 to iterations:
+        mean_alpha, (ci_lower, ci_upper) = 
+            bootstrap_krippendorff(all_annotated where iteration <= i, 
+                                   'iteration', bootstrap_samples)
+        ka_scores[i] = {Average Alpha: mean_alpha, CI Lower: ci_lower, 
+                        CI Upper: ci_upper}
+
+    # Save annotated data to CSV if specified
+    If save_csv:
+        save all_annotated to save_csv
+
+    # Plot KA scores if specified
+    If plot:
+        Plot KA scores with CI
+
+    Return ka_scores, all_annotated
+\end{lstlisting}

@@ -1,0 +1,95 @@
+LLMs are culturally fluid -- trained on data from all over the world -- and this means that concepts must either be situated or capable of 'traveling'.
+
+The LLM may give stochastic answers. 'Hallucinations'.
+
+For LLMs, we can get two types of low intercoder reliability: either within the same prompt, or across different prompts. These capture somewhat different aspects. 
+
+\begin{table}[ht]
+\centering
+\caption{Inter-Iteration and Inter-Prompt Stability vs. Accuracy}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{4pt}
+\label{intertab}
+\begin{tabular}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Inter-Iteration/Inter-Prompt Stability} & \textbf{High Accuracy} & \textbf{Low Accuracy} \\ \hline
+High Stability & \cellcolor[HTML]{FEACA5}Desirable Outcome & Consistent but Incorrect \\ \hline
+Low Stability & Unstable but Correct & Unstable and Incorrect \\ \hline
+\end{tabular}
+\end{table}
+
+But stable outcomes do not necessarily imply accuracy. For example, the model may give consistent classifications across multiple runs of the same (different) prompt but consistently classify wrongly. This would result in high inter-iteration (-prompt) stability but low accuracy. Alternatively, the model may give inconsistent classifications across multiple runs of the same (different) prompts but classify at least some correctly. This would result in high inter-iteration (-prompt) stability and high accuracy. Finally, the model may exhibit high inter-iteration stability and high accuracy as well as high inter-prompt stability and high accuracy. This is what applied researchers should be interested in achieving. We summarize these potential outcomes in Table \ref{intertab}.
+
+First, we cannot be sure that there are unknown biases in the model that determine outputs; i.e., that the models are in some way `objective.' As for validity, we have some indication that the construct is valid if the LLM is able consistently to classify the output over repeated runs of the same or similar prompts. Replicability flows from this: we want to ensure that if we used the LLM in a slightly different way, the output would be substantively similar.
+
+\clearpage
+\begin{sidewaystable}[ht]
+    \centering
+    \begin{tabular}{| m{2cm} | m{8cm} | m{3cm} | m{6cm} |}
+        \hline
+        \textbf{Dataset} & \textbf{Prompt and Prompt Postfix} & \textbf{Outcome Type} & \textbf{Example Text} \\ \hline
+        Tweets & 
+        \texttt{original\_text = `The following is a Twitter message written either by a Republican or a Democrat before the 2020 election. Your task is to guess whether the author is Republican or Democrat.'}
+        \texttt{prompt\_postfix = `[Respond 0 for Democrat, or 1 for Republican. Guess if you do not know. Respond nothing else.]'}
+        & Republican or Democrat &
+        ``The \texttt{@}FBI is taking corruption claims against the Bidens seriously. Why is this story not being covered by \texttt{@}NPR and the mainstream media? Americans deserve to know the truth." \\ \hline
+        
+        News & 
+        \texttt{original\_text = `The text provided is some newspaper text. Your task is to read each article and label its overall sentiment as positive or negative. Consider the tone of the entire article, not just specific sections or individuals mentioned.'}
+        \texttt{prompt\_postfix = `[Respond 0 for negative, or 1 for positive. Respond nothing else.]'}
+        & Sentiment (Positive or Negative) &
+        ``Helped by lower inflation and a general improvement in economic conditions, personal incomes for New York State residents showed renewed strength last year. New Yorkers' total personal income grew 11 .8 percent in 1980..." \\ \hline
+        
+        Manifestos & 
+        \texttt{original\_text = `The text provided is a party manifesto for a political party in the United Kingdom. Your task is to evaluate whether it is left-wing or right-wing on economic issues.'}
+        \texttt{prompt\_postfix = `Respond with 0 for left-wing, or 1 for right-wing. Respond nothing else.'}
+        & Left-wing or Right-wing &
+        ``Most people's tax will be cut by replacing Council Tax with a system based on ability to pay, saving the typical household around \texttt{\textbackslash{}}pounds 450 per year. Tough choices in public spending. Liberal Democrats have different spending priorities from Labour..." \\ \hline
+        
+        Manifestos & 
+        \texttt{original\_text = `The text provided is a party manifesto for a political party in the United Kingdom. Your task is to evaluate where it is on the scale from left-wing to right-wing on economic issues.'}
+        \texttt{prompt\_postfix = `Respond with a number from 1 to 10. 1 corresponds to most left-wing. 10 corresponds to most right-wing. Respond nothing else.'}
+        & Scale from 1 to 10 &
+        ``Most people's tax will be cut by replacing Council Tax with a system based on ability to pay, saving the typical household around £450 per year. Tough choices in public spending. Liberal Democrats have different spending priorities from Labour... "\\ \hline
+    \end{tabular}
+    \caption{Datasets and Outcome Types}
+    \label{tab:datasets}
+\end{sidewaystable}
+
+\subsection{How many examples should we check?}
+
+In the above, we classify 100 rows of randomly sampled data for each iteration/temperature in the intra= and intra-prompt stability estimations respectively. For the inter-prompt stability approach, where we test twelve temperatures and ten prompt variations per temperature, this means classifying an additional 12000 rows of data to estimate prompt stability scores.
+
+While this may appear a burdensome task, the entire process is automated and, when using a model such as \texttt{gpt-3.5-turbo} or an open-source alternative, remains relatively cheap or cost free. That said, applied researchers need not conduct as comprehensive a set of tests as we detail in the above. We instead urge applied researchers, first, to make use of the bootstrapped CIs when evaluating the PSS for a given problem. If the CIs include 0.8, they cannot be sure that the PSS is significantly greater or less than this conventionally accepted threshold. Second, to provide some calculation of required sample sizes necessary for a given research problem, we refer the reader to the guidelines provided by \cite{krippendorff2011agreement}.
+
+Of course, we do not know if the human coders are all consistently biased in one direction, which would result in high reliability even if responses are subjective. When prompt stability is high, we also do not know whether this is because we are targeting some objective quantity or the LM has some engineered bias toward a particular ``point of view" such that it consistently reproduces the same ``subjective" classification (e.g., what constitutes ``hateful" speech) with either the same or similar prompt. When coder reliability is high, we have some indication that we are targeting a valid construct, which has some identifiable and understandable definition. When prompt stability is high, we also have some indication that we are classifying a valid construct which the LM can ``understand." For both cases, though, it is worth noting that high reliability/stability is a necessary but not a sufficient condition for validity: a human coder may default to \textit{consistently} responding ``Don't know" if the construct is unclear and an LM may behave similarly .
+
+%In order to calculate prompt stability, we propose testing: 1) multiple iterations of the same prompt; 2) multiple iterations of different prompts. We refer to the first as intra-prompt stability and to the second as inter-prompt stability. The first of these is directly analogous to intra-coder reliability: the same human (LM) is coding the same data multiple times. The second requires some reconceptualization. Inter-coder reliability refers to different humans coding the same data multiple times. Inter-prompt stability refers to different prompts coding the same data multiple times. Overall, our approach is capturing two separate things: 1) how stable the LM results are over repeated iterations of the same prompt; and 2) how stable the LM results are across different prompts.
+
+\begin{comment}
+In Table \ref{table:icr_ps} we note that when coder reliability is high, we have some (but in no way definitive) indication that both coders and LMs are not reliant on subjective judgment, that the construct is valid, and that the workflow is more likely reproducible. 
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{2cm}p{4.5cm}p{4.5cm}}
+\toprule
+\textbf{Aspect} & \textbf{Coder Reliability} & \textbf{Prompt Stability} \\
+\midrule
+Objectivity & High reliability indicates that coding decisions are not overly reliant on subjective judgment. & High stability may indicate that biases in the model do not significantly affect classifications. \\
+\addlinespace[0.5em]
+Validity & High reliability suggests the construct being measured is valid. & High stability suggests the construct being measured is valid. \\
+\addlinespace[0.5em]
+Replicability & High reliability means other researchers can reproduce the same classifications. & High stability means other language models can reproduce the same classifications. \\
+\bottomrule
+
+\end{tabular}
+\caption{Comparison of coder reliability and prompt stability in research contexts}
+\label{table:icr_ps}
+\end{table}
+\end{comment}
+
+\subsection{Parameter stability}
+
+We also know that LMs may be more less vulnerable to output variations based on the tuning of key model parameters. The most important of these are the \texttt{temperature} setting of the model and the \texttt{top\_p} setting. Both of these parameters have an influence on how conservative the model is when producing its output.\footnote{For models like OpenAI's GPT-3.5 and GPT-4, the user can also adapt the ``Frequency penalty" and ``Presence penalty." Both of these control, in different ways, the creativity of the model by preventing it from using the same phrases or producing the same topics respectively. For classification tasks, it is less common for users to adapt these. For this reason, and for reasons of parsimony, we hold these parameters constant. A low temperature is generally recommended for text annotation. In our examples we hold it constant at .1. We also keep \texttt{top\_p} at its default setting of 1.} As a result, researchers should also be aware that the stability and accuracy of their outcomes may depend on these parameters. We leave the task of determining the stability of outcomes when iterating over these additional parameters to future research.

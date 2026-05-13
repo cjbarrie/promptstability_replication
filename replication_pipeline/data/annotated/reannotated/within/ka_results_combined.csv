@@ -1,0 +1,697 @@
+iteration,ka_mean,dataset,type
+1,0.9641470944190901,manifestos_multi,Filtered
+2,0.9702920560908441,manifestos_multi,Filtered
+3,0.9729238312698124,manifestos_multi,Filtered
+4,0.9729751345950294,manifestos_multi,Filtered
+5,0.9741760475305089,manifestos_multi,Filtered
+6,0.9749797143379045,manifestos_multi,Filtered
+7,0.975744699393953,manifestos_multi,Filtered
+8,0.9739990168840452,manifestos_multi,Filtered
+9,0.9741986892573651,manifestos_multi,Filtered
+10,0.9747315921302686,manifestos_multi,Filtered
+11,0.9749980531954786,manifestos_multi,Filtered
+12,0.9734577043351573,manifestos_multi,Filtered
+13,0.9731927534926825,manifestos_multi,Filtered
+14,0.9736259562051087,manifestos_multi,Filtered
+15,0.9740336226271497,manifestos_multi,Filtered
+16,0.974107848369207,manifestos_multi,Filtered
+17,0.9738309038821035,manifestos_multi,Filtered
+18,0.9743048559138356,manifestos_multi,Filtered
+19,0.973519357795501,manifestos_multi,Filtered
+20,0.9737777607459395,manifestos_multi,Filtered
+21,0.9739301680710621,manifestos_multi,Filtered
+22,0.974398087958489,manifestos_multi,Filtered
+23,0.9747411977009716,manifestos_multi,Filtered
+24,0.9746605808825024,manifestos_multi,Filtered
+25,0.974858046674085,manifestos_multi,Filtered
+26,0.9749412424767797,manifestos_multi,Filtered
+27,0.9751827221331038,manifestos_multi,Filtered
+28,0.9755564283250034,manifestos_multi,Filtered
+29,0.9750716641683221,manifestos_multi,Filtered
+1,0.920879540761092,manifestos,Filtered
+2,0.9187866531850354,manifestos,Filtered
+3,0.9115666398693688,manifestos,Filtered
+4,0.914517569200063,manifestos,Filtered
+5,0.9177860343751773,manifestos,Filtered
+6,0.9209132055774369,manifestos,Filtered
+7,0.9232653061224491,manifestos,Filtered
+8,0.9230586356582173,manifestos,Filtered
+9,0.9232347840342231,manifestos,Filtered
+10,0.9245197061923417,manifestos,Filtered
+11,0.9242000266621745,manifestos,Filtered
+12,0.9225755513720878,manifestos,Filtered
+13,0.9228431812071194,manifestos,Filtered
+14,0.9230090245699926,manifestos,Filtered
+15,0.9216557904484961,manifestos,Filtered
+16,0.9220017095515715,manifestos,Filtered
+17,0.9205199624536217,manifestos,Filtered
+18,0.9213976077791811,manifestos,Filtered
+19,0.9223144039125948,manifestos,Filtered
+20,0.9237030724127561,manifestos,Filtered
+21,0.9226878974061525,manifestos,Filtered
+22,0.9226701507761008,manifestos,Filtered
+23,0.9232058506167012,manifestos,Filtered
+24,0.9232732222867397,manifestos,Filtered
+25,0.9241048365846476,manifestos,Filtered
+26,0.9241133629097821,manifestos,Filtered
+27,0.9234613470254528,manifestos,Filtered
+28,0.9232449087828065,manifestos,Filtered
+29,0.9231953953548824,manifestos,Filtered
+1,0.9958823563287895,mii_long,Filtered
+2,0.9972647273701694,mii_long,Filtered
+3,0.9979587863877714,mii_long,Filtered
+4,0.9983729173162453,mii_long,Filtered
+5,0.998644246064677,mii_long,Filtered
+6,0.9988375004798052,mii_long,Filtered
+7,0.9989848416980982,mii_long,Filtered
+8,0.9990967164871326,mii_long,Filtered
+9,0.9991854126760371,mii_long,Filtered
+10,0.9992601835247809,mii_long,Filtered
+11,0.9993220342142074,mii_long,Filtered
+12,0.9987478880877951,mii_long,Filtered
+13,0.9988376407990364,mii_long,Filtered
+14,0.9989161355678022,mii_long,Filtered
+15,0.9989824001399243,mii_long,Filtered
+16,0.9990424671176192,mii_long,Filtered
+17,0.9986450119502418,mii_long,Filtered
+18,0.9987164231709896,mii_long,Filtered
+19,0.9987801384621332,mii_long,Filtered
+20,0.9988378323752999,mii_long,Filtered
+21,0.9988892399157949,mii_long,Filtered
+22,0.9989375443828746,mii_long,Filtered
+23,0.9989819689474653,mii_long,Filtered
+24,0.9990231697303861,mii_long,Filtered
+25,0.9990606735076634,mii_long,Filtered
+26,0.9990951786580962,mii_long,Filtered
+27,0.9991272947303566,mii_long,Filtered
+28,0.999157375054899,mii_long,Filtered
+29,0.9991853310048439,mii_long,Filtered
+1,1.0,mii,Filtered
+2,1.0,mii,Filtered
+3,1.0,mii,Filtered
+4,1.0,mii,Filtered
+5,1.0,mii,Filtered
+6,1.0,mii,Filtered
+7,1.0,mii,Filtered
+8,1.0,mii,Filtered
+9,1.0,mii,Filtered
+10,1.0,mii,Filtered
+11,1.0,mii,Filtered
+12,1.0,mii,Filtered
+13,1.0,mii,Filtered
+14,1.0,mii,Filtered
+15,1.0,mii,Filtered
+16,1.0,mii,Filtered
+17,1.0,mii,Filtered
+18,1.0,mii,Filtered
+19,1.0,mii,Filtered
+20,1.0,mii,Filtered
+21,1.0,mii,Filtered
+22,1.0,mii,Filtered
+23,0.9997143611003764,mii,Filtered
+24,0.9997256010987052,mii,Filtered
+25,0.999736076980256,mii,Filtered
+26,0.999745863780691,mii,Filtered
+27,0.9997549546489516,mii,Filtered
+28,0.9997633950019061,mii,Filtered
+29,0.999771324404741,mii,Filtered
+1,0.9626522327469553,news_short,Filtered
+2,0.9309474789067862,news_short,Filtered
+3,0.9340087685422866,news_short,Filtered
+4,0.9413572147137296,news_short,Filtered
+5,0.9419849182650943,news_short,Filtered
+6,0.9343572274954792,news_short,Filtered
+7,0.9265886185978093,news_short,Filtered
+8,0.9291542626991931,news_short,Filtered
+9,0.9332368263759819,news_short,Filtered
+10,0.9358233423709882,news_short,Filtered
+11,0.9356384143984603,news_short,Filtered
+12,0.9326579367879899,news_short,Filtered
+13,0.9321596593902589,news_short,Filtered
+14,0.9245367651329844,news_short,Filtered
+15,0.9246799799544246,news_short,Filtered
+16,0.926556503084375,news_short,Filtered
+17,0.9266531347311934,news_short,Filtered
+18,0.9250274083727338,news_short,Filtered
+19,0.9266758295778909,news_short,Filtered
+20,0.9259596229341865,news_short,Filtered
+21,0.9245506774977086,news_short,Filtered
+22,0.9245787873816586,news_short,Filtered
+23,0.9235096584795486,news_short,Filtered
+24,0.9230590416655067,news_short,Filtered
+25,0.9233172154317686,news_short,Filtered
+26,0.9246367851894984,news_short,Filtered
+27,0.9254334411632175,news_short,Filtered
+28,0.9224863238297997,news_short,Filtered
+29,0.923039539076175,news_short,Filtered
+1,0.9611404517373765,news,Filtered
+2,0.9611839248863973,news,Filtered
+3,0.9580632955603849,news,Filtered
+4,0.9574239453914067,news,Filtered
+5,0.955889851105419,news,Filtered
+6,0.9565374644132928,news,Filtered
+7,0.9566218551533817,news,Filtered
+8,0.9570338875355786,news,Filtered
+9,0.9560161600927282,news,Filtered
+10,0.9555908692286597,news,Filtered
+11,0.9555013055436425,news,Filtered
+12,0.9560815886600446,news,Filtered
+13,0.9550951863946281,news,Filtered
+14,0.9537829162115693,news,Filtered
+15,0.9535510125655702,news,Filtered
+16,0.9525944268604851,news,Filtered
+17,0.9528274307762175,news,Filtered
+18,0.9535231774768769,news,Filtered
+19,0.9534649231678891,news,Filtered
+20,0.9533952076138691,news,Filtered
+21,0.9537548947486029,news,Filtered
+22,0.9536334224474847,news,Filtered
+23,0.9534013534755572,news,Filtered
+24,0.9524385171016253,news,Filtered
+25,0.9523423095617674,news,Filtered
+26,0.9515585063564057,news,Filtered
+27,0.9517505832802989,news,Filtered
+28,0.9519236736020132,news,Filtered
+29,0.9513461441821724,news,Filtered
+1,0.9444492590345783,stance_long,Filtered
+2,0.9463938206726277,stance_long,Filtered
+3,0.9503820207337795,stance_long,Filtered
+4,0.945376219584873,stance_long,Filtered
+5,0.9482559708577628,stance_long,Filtered
+6,0.948567268270804,stance_long,Filtered
+7,0.9467277995316113,stance_long,Filtered
+8,0.9482565614550083,stance_long,Filtered
+9,0.9510590045318307,stance_long,Filtered
+10,0.9510407538858497,stance_long,Filtered
+11,0.9528345118878402,stance_long,Filtered
+12,0.9536082222536552,stance_long,Filtered
+13,0.9541666130301123,stance_long,Filtered
+14,0.9545803351280632,stance_long,Filtered
+15,0.954919971997998,stance_long,Filtered
+16,0.9561020155503146,stance_long,Filtered
+17,0.9571659321200694,stance_long,Filtered
+18,0.956835023103947,stance_long,Filtered
+19,0.9564977877605554,stance_long,Filtered
+20,0.9559094878764043,stance_long,Filtered
+21,0.9570179661594838,stance_long,Filtered
+22,0.9571806668612586,stance_long,Filtered
+23,0.9574158296515608,stance_long,Filtered
+24,0.9571069157311146,stance_long,Filtered
+25,0.9564624508904828,stance_long,Filtered
+26,0.9562747041215583,stance_long,Filtered
+27,0.9570255570292919,stance_long,Filtered
+28,0.9566495075781551,stance_long,Filtered
+29,0.9556619686903457,stance_long,Filtered
+1,0.9223700825643516,stance,Filtered
+2,0.9161003248437671,stance,Filtered
+3,0.9280678538173635,stance,Filtered
+4,0.9303176694481042,stance,Filtered
+5,0.9311978987993139,stance,Filtered
+6,0.9330668343749591,stance,Filtered
+7,0.9313295424590473,stance,Filtered
+8,0.9337868132407664,stance,Filtered
+9,0.9315193720285763,stance,Filtered
+10,0.9311824825722336,stance,Filtered
+11,0.9296204602166047,stance,Filtered
+12,0.9282694967559458,stance,Filtered
+13,0.9293529551604993,stance,Filtered
+14,0.9300963172574089,stance,Filtered
+15,0.9304621912721696,stance,Filtered
+16,0.9306708886448956,stance,Filtered
+17,0.9312503071803309,stance,Filtered
+18,0.9311464436445096,stance,Filtered
+19,0.9310979243085915,stance,Filtered
+20,0.9300249805515115,stance,Filtered
+21,0.9302233007779189,stance,Filtered
+22,0.9296807698830054,stance,Filtered
+23,0.9300102986544774,stance,Filtered
+24,0.9297462281330408,stance,Filtered
+25,0.9298429909555106,stance,Filtered
+26,0.9309076353659705,stance,Filtered
+27,0.9312262815011941,stance,Filtered
+28,0.9311681144938367,stance,Filtered
+29,0.9315630363686599,stance,Filtered
+1,0.8662053571428572,synth_short,Filtered
+2,0.8347414734858736,synth_short,Filtered
+3,0.8388702876984128,synth_short,Filtered
+4,0.8268272665480787,synth_short,Filtered
+5,0.8340355521653618,synth_short,Filtered
+6,0.8229548362463923,synth_short,Filtered
+7,0.8212731530764318,synth_short,Filtered
+8,0.8200084335156628,synth_short,Filtered
+9,0.8245344870842047,synth_short,Filtered
+10,0.8252772036154706,synth_short,Filtered
+11,0.8219026202982713,synth_short,Filtered
+12,0.8235354770531138,synth_short,Filtered
+13,0.8207115591925804,synth_short,Filtered
+14,0.8232269700454884,synth_short,Filtered
+15,0.8206856812527934,synth_short,Filtered
+16,0.8229608801353043,synth_short,Filtered
+17,0.8216052670989382,synth_short,Filtered
+18,0.8218385259074187,synth_short,Filtered
+19,0.8219872007556857,synth_short,Filtered
+20,0.8227481735984856,synth_short,Filtered
+21,0.8243418914527135,synth_short,Filtered
+22,0.8243120964929418,synth_short,Filtered
+23,0.8233019415757574,synth_short,Filtered
+24,0.8219615052775022,synth_short,Filtered
+25,0.8221315302261933,synth_short,Filtered
+26,0.8227940682917473,synth_short,Filtered
+27,0.8218406667738851,synth_short,Filtered
+28,0.8208791551282392,synth_short,Filtered
+29,0.820701181513044,synth_short,Filtered
+1,0.9360384153661465,synth,Filtered
+2,0.9413620199146515,synth,Filtered
+3,0.9393534173942063,synth,Filtered
+4,0.9408151573826631,synth,Filtered
+5,0.9458760272203673,synth,Filtered
+6,0.9459124290768619,synth,Filtered
+7,0.9474328304340577,synth,Filtered
+8,0.9491121265812581,synth,Filtered
+9,0.9493340955009706,synth,Filtered
+10,0.94705509863244,synth,Filtered
+11,0.9455159446930418,synth,Filtered
+12,0.9462569395002742,synth,Filtered
+13,0.9450984573414074,synth,Filtered
+14,0.9446851241816917,synth,Filtered
+15,0.9443671917669318,synth,Filtered
+16,0.9452353214084485,synth,Filtered
+17,0.9452806376754916,synth,Filtered
+18,0.9456371256895193,synth,Filtered
+19,0.9446315789473684,synth,Filtered
+20,0.9451424908936751,synth,Filtered
+21,0.9453161004792595,synth,Filtered
+22,0.9458024797410456,synth,Filtered
+23,0.9463616021122583,synth,Filtered
+24,0.9470388556087785,synth,Filtered
+25,0.9462024771459754,synth,Filtered
+26,0.9465974454713963,synth,Filtered
+27,0.9466129666471431,synth,Filtered
+28,0.9468165844914186,synth,Filtered
+29,0.9464505736898907,synth,Filtered
+1,1.0,tweets_pop,Filtered
+2,0.9861182041877524,tweets_pop,Filtered
+3,0.9546800870226206,tweets_pop,Filtered
+4,0.9540215442864084,tweets_pop,Filtered
+5,0.952584280126653,tweets_pop,Filtered
+6,0.9502238856986601,tweets_pop,Filtered
+7,0.954425041494261,tweets_pop,Filtered
+8,0.9581806434939915,tweets_pop,Filtered
+9,0.9582329921733895,tweets_pop,Filtered
+10,0.9567239140046424,tweets_pop,Filtered
+11,0.9543885343655194,tweets_pop,Filtered
+12,0.9490217024904822,tweets_pop,Filtered
+13,0.9484366927190456,tweets_pop,Filtered
+14,0.9485174996199468,tweets_pop,Filtered
+15,0.9500543891378994,tweets_pop,Filtered
+16,0.9491687047416795,tweets_pop,Filtered
+17,0.9475504894012354,tweets_pop,Filtered
+18,0.9492649416181507,tweets_pop,Filtered
+19,0.9498541431467402,tweets_pop,Filtered
+20,0.9507325690566784,tweets_pop,Filtered
+21,0.9498132742143347,tweets_pop,Filtered
+22,0.9507746257720088,tweets_pop,Filtered
+23,0.9493642786387578,tweets_pop,Filtered
+24,0.9476118552924981,tweets_pop,Filtered
+25,0.9488634309643156,tweets_pop,Filtered
+26,0.9475706662182732,tweets_pop,Filtered
+27,0.9474845480641996,tweets_pop,Filtered
+28,0.9481587182529154,tweets_pop,Filtered
+29,0.9466143462758416,tweets_pop,Filtered
+1,0.9395687822654115,tweets_rd,Filtered
+2,0.9463773314203731,tweets_rd,Filtered
+3,0.9463655610444601,tweets_rd,Filtered
+4,0.9435921452102577,tweets_rd,Filtered
+5,0.9502843235119282,tweets_rd,Filtered
+6,0.9462939181402088,tweets_rd,Filtered
+7,0.9517901833275247,tweets_rd,Filtered
+8,0.9529556294262177,tweets_rd,Filtered
+9,0.9569795232866094,tweets_rd,Filtered
+10,0.954543756421033,tweets_rd,Filtered
+11,0.9523515961262554,tweets_rd,Filtered
+12,0.9519209415944926,tweets_rd,Filtered
+13,0.9536995205916002,tweets_rd,Filtered
+14,0.9554620146187169,tweets_rd,Filtered
+15,0.9571699352893074,tweets_rd,Filtered
+16,0.9537848299912816,tweets_rd,Filtered
+17,0.9537686634286743,tweets_rd,Filtered
+18,0.9537975475475475,tweets_rd,Filtered
+19,0.9542756195635,tweets_rd,Filtered
+20,0.9545062301378633,tweets_rd,Filtered
+21,0.9538307190263893,tweets_rd,Filtered
+22,0.9550597609561753,tweets_rd,Filtered
+23,0.9542063188803198,tweets_rd,Filtered
+24,0.9540493407554795,tweets_rd,Filtered
+25,0.9552298537944724,tweets_rd,Filtered
+26,0.9533809821614699,tweets_rd,Filtered
+27,0.9535734418032524,tweets_rd,Filtered
+28,0.9536504499234043,tweets_rd,Filtered
+29,0.9524345617766254,tweets_rd,Filtered
+1,0.9641470944190901,manifestos_multi,Filtered & Balanced
+2,0.9702920560908441,manifestos_multi,Filtered & Balanced
+3,0.9729238312698124,manifestos_multi,Filtered & Balanced
+4,0.9729751345950294,manifestos_multi,Filtered & Balanced
+5,0.9741760475305089,manifestos_multi,Filtered & Balanced
+6,0.9749797143379045,manifestos_multi,Filtered & Balanced
+7,0.975744699393953,manifestos_multi,Filtered & Balanced
+8,0.9739990168840452,manifestos_multi,Filtered & Balanced
+9,0.9741986892573651,manifestos_multi,Filtered & Balanced
+10,0.9747315921302686,manifestos_multi,Filtered & Balanced
+11,0.9749980531954786,manifestos_multi,Filtered & Balanced
+12,0.9734577043351573,manifestos_multi,Filtered & Balanced
+13,0.9731927534926825,manifestos_multi,Filtered & Balanced
+14,0.9736259562051087,manifestos_multi,Filtered & Balanced
+15,0.9740336226271497,manifestos_multi,Filtered & Balanced
+16,0.974107848369207,manifestos_multi,Filtered & Balanced
+17,0.9738309038821035,manifestos_multi,Filtered & Balanced
+18,0.9743048559138356,manifestos_multi,Filtered & Balanced
+19,0.973519357795501,manifestos_multi,Filtered & Balanced
+20,0.9737777607459395,manifestos_multi,Filtered & Balanced
+21,0.9739301680710621,manifestos_multi,Filtered & Balanced
+22,0.974398087958489,manifestos_multi,Filtered & Balanced
+23,0.9747411977009716,manifestos_multi,Filtered & Balanced
+24,0.9746605808825024,manifestos_multi,Filtered & Balanced
+25,0.974858046674085,manifestos_multi,Filtered & Balanced
+26,0.9749412424767797,manifestos_multi,Filtered & Balanced
+27,0.9751827221331038,manifestos_multi,Filtered & Balanced
+28,0.9755564283250034,manifestos_multi,Filtered & Balanced
+29,0.9750716641683221,manifestos_multi,Filtered & Balanced
+1,0.920879540761092,manifestos,Filtered & Balanced
+2,0.9187866531850354,manifestos,Filtered & Balanced
+3,0.9115666398693688,manifestos,Filtered & Balanced
+4,0.914517569200063,manifestos,Filtered & Balanced
+5,0.9177860343751773,manifestos,Filtered & Balanced
+6,0.9209132055774369,manifestos,Filtered & Balanced
+7,0.9232653061224491,manifestos,Filtered & Balanced
+8,0.9230586356582173,manifestos,Filtered & Balanced
+9,0.9232347840342231,manifestos,Filtered & Balanced
+10,0.9245197061923417,manifestos,Filtered & Balanced
+11,0.9242000266621745,manifestos,Filtered & Balanced
+12,0.9225755513720878,manifestos,Filtered & Balanced
+13,0.9228431812071194,manifestos,Filtered & Balanced
+14,0.9230090245699926,manifestos,Filtered & Balanced
+15,0.9216557904484961,manifestos,Filtered & Balanced
+16,0.9220017095515715,manifestos,Filtered & Balanced
+17,0.9205199624536217,manifestos,Filtered & Balanced
+18,0.9213976077791811,manifestos,Filtered & Balanced
+19,0.9223144039125948,manifestos,Filtered & Balanced
+20,0.9237030724127561,manifestos,Filtered & Balanced
+21,0.9226878974061525,manifestos,Filtered & Balanced
+22,0.9226701507761008,manifestos,Filtered & Balanced
+23,0.9232058506167012,manifestos,Filtered & Balanced
+24,0.9232732222867397,manifestos,Filtered & Balanced
+25,0.9241048365846476,manifestos,Filtered & Balanced
+26,0.9241133629097821,manifestos,Filtered & Balanced
+27,0.9234613470254528,manifestos,Filtered & Balanced
+28,0.9232449087828065,manifestos,Filtered & Balanced
+29,0.9231953953548824,manifestos,Filtered & Balanced
+1,0.9956493913673065,mii_long,Filtered & Balanced
+2,0.9971851489749162,mii_long,Filtered & Balanced
+3,0.9979084004165373,mii_long,Filtered & Balanced
+4,0.9983293445329126,mii_long,Filtered & Balanced
+5,0.9986046456471928,mii_long,Filtered & Balanced
+6,0.9988045635496339,mii_long,Filtered & Balanced
+7,0.9989568785318812,mii_long,Filtered & Balanced
+8,0.9990728668947945,mii_long,Filtered & Balanced
+9,0.9991646463606632,mii_long,Filtered & Balanced
+10,0.9992405155132605,mii_long,Filtered & Balanced
+11,0.9993035861133727,mii_long,Filtered & Balanced
+12,0.9987149394292394,mii_long,Filtered & Balanced
+13,0.9988067275248466,mii_long,Filtered & Balanced
+14,0.9988865470613962,mii_long,Filtered & Balanced
+15,0.9989560346689238,mii_long,Filtered & Balanced
+16,0.9990177840710122,mii_long,Filtered & Balanced
+17,0.998608642705492,mii_long,Filtered & Balanced
+18,0.9986825996777864,mii_long,Filtered & Balanced
+19,0.9987480131884413,mii_long,Filtered & Balanced
+20,0.9988085229303109,mii_long,Filtered & Balanced
+21,0.9988624962176688,mii_long,Filtered & Balanced
+22,0.9989125410277997,mii_long,Filtered & Balanced
+23,0.9989582637582598,mii_long,Filtered & Balanced
+24,0.9990001770355599,mii_long,Filtered & Balanced
+25,0.9990384815297133,mii_long,Filtered & Balanced
+26,0.9990741269358133,mii_long,Filtered & Balanced
+27,0.999107214747886,mii_long,Filtered & Balanced
+28,0.9991382705402831,mii_long,Filtered & Balanced
+29,0.9991668665671034,mii_long,Filtered & Balanced
+1,1.0,mii,Filtered & Balanced
+2,1.0,mii,Filtered & Balanced
+3,1.0,mii,Filtered & Balanced
+4,1.0,mii,Filtered & Balanced
+5,1.0,mii,Filtered & Balanced
+6,1.0,mii,Filtered & Balanced
+7,1.0,mii,Filtered & Balanced
+8,1.0,mii,Filtered & Balanced
+9,1.0,mii,Filtered & Balanced
+10,1.0,mii,Filtered & Balanced
+11,1.0,mii,Filtered & Balanced
+12,1.0,mii,Filtered & Balanced
+13,1.0,mii,Filtered & Balanced
+14,1.0,mii,Filtered & Balanced
+15,1.0,mii,Filtered & Balanced
+16,1.0,mii,Filtered & Balanced
+17,1.0,mii,Filtered & Balanced
+18,1.0,mii,Filtered & Balanced
+19,1.0,mii,Filtered & Balanced
+20,1.0,mii,Filtered & Balanced
+21,1.0,mii,Filtered & Balanced
+22,1.0,mii,Filtered & Balanced
+23,0.9997099150692313,mii,Filtered & Balanced
+24,0.9997214477421633,mii,Filtered & Balanced
+25,0.999732173038592,mii,Filtered & Balanced
+26,0.9997420490452668,mii,Filtered & Balanced
+27,0.9997513379835573,mii,Filtered & Balanced
+28,0.9997598738386307,mii,Filtered & Balanced
+29,0.9997678795867223,mii,Filtered & Balanced
+1,0.9626522327469553,news_short,Filtered & Balanced
+2,0.9309474789067862,news_short,Filtered & Balanced
+3,0.9340087685422866,news_short,Filtered & Balanced
+4,0.9413572147137296,news_short,Filtered & Balanced
+5,0.9419849182650943,news_short,Filtered & Balanced
+6,0.9343572274954792,news_short,Filtered & Balanced
+7,0.9265886185978093,news_short,Filtered & Balanced
+8,0.9291542626991931,news_short,Filtered & Balanced
+9,0.9332368263759819,news_short,Filtered & Balanced
+10,0.9358233423709882,news_short,Filtered & Balanced
+11,0.9356384143984603,news_short,Filtered & Balanced
+12,0.9326579367879899,news_short,Filtered & Balanced
+13,0.9321596593902589,news_short,Filtered & Balanced
+14,0.9245367651329844,news_short,Filtered & Balanced
+15,0.9246799799544246,news_short,Filtered & Balanced
+16,0.926556503084375,news_short,Filtered & Balanced
+17,0.9266531347311934,news_short,Filtered & Balanced
+18,0.9250274083727338,news_short,Filtered & Balanced
+19,0.9266758295778909,news_short,Filtered & Balanced
+20,0.9259596229341865,news_short,Filtered & Balanced
+21,0.9245506774977086,news_short,Filtered & Balanced
+22,0.9245787873816586,news_short,Filtered & Balanced
+23,0.9235096584795486,news_short,Filtered & Balanced
+24,0.9230590416655067,news_short,Filtered & Balanced
+25,0.9233172154317686,news_short,Filtered & Balanced
+26,0.9246367851894984,news_short,Filtered & Balanced
+27,0.9254334411632175,news_short,Filtered & Balanced
+28,0.9224863238297997,news_short,Filtered & Balanced
+29,0.923039539076175,news_short,Filtered & Balanced
+1,0.9611404517373765,news,Filtered & Balanced
+2,0.9611839248863973,news,Filtered & Balanced
+3,0.9580632955603849,news,Filtered & Balanced
+4,0.9574239453914067,news,Filtered & Balanced
+5,0.955878084179971,news,Filtered & Balanced
+6,0.9565275708920946,news,Filtered & Balanced
+7,0.9566132020174449,news,Filtered & Balanced
+8,0.9570262592627127,news,Filtered & Balanced
+9,0.9559989819555498,news,Filtered & Balanced
+10,0.9555686448076441,news,Filtered & Balanced
+11,0.9554808937106973,news,Filtered & Balanced
+12,0.9560629863898686,news,Filtered & Balanced
+13,0.9550775329905038,news,Filtered & Balanced
+14,0.9537659485251571,news,Filtered & Balanced
+15,0.9535350308470827,news,Filtered & Balanced
+16,0.9525746137571794,news,Filtered & Balanced
+17,0.952808809926568,news,Filtered & Balanced
+18,0.9535058027065482,news,Filtered & Balanced
+19,0.9534484005869326,news,Filtered & Balanced
+20,0.9533794461250661,news,Filtered & Balanced
+21,0.9537351348584893,news,Filtered & Balanced
+22,0.9536112475470714,news,Filtered & Balanced
+23,0.9533799949968442,news,Filtered & Balanced
+24,0.9524145322227128,news,Filtered & Balanced
+25,0.9523149958311719,news,Filtered & Balanced
+26,0.9515276606961063,news,Filtered & Balanced
+27,0.9517209564755539,news,Filtered & Balanced
+28,0.9518951768498208,news,Filtered & Balanced
+29,0.9513182637666806,news,Filtered & Balanced
+1,0.9440262441053279,stance_long,Filtered & Balanced
+2,0.946214477697581,stance_long,Filtered & Balanced
+3,0.9502260792578666,stance_long,Filtered & Balanced
+4,0.9452113252978271,stance_long,Filtered & Balanced
+5,0.9481041098083502,stance_long,Filtered & Balanced
+6,0.9484100972589363,stance_long,Filtered & Balanced
+7,0.9465600047892037,stance_long,Filtered & Balanced
+8,0.9480901852045067,stance_long,Filtered & Balanced
+9,0.950905234256102,stance_long,Filtered & Balanced
+10,0.9508896323393221,stance_long,Filtered & Balanced
+11,0.9526864134730757,stance_long,Filtered & Balanced
+12,0.9534601670591473,stance_long,Filtered & Balanced
+13,0.9540185129272061,stance_long,Filtered & Balanced
+14,0.9544318870561546,stance_long,Filtered & Balanced
+15,0.9547746545083172,stance_long,Filtered & Balanced
+16,0.9559623059617381,stance_long,Filtered & Balanced
+17,0.9570311806041415,stance_long,Filtered & Balanced
+18,0.9566977743950743,stance_long,Filtered & Balanced
+19,0.956692579769833,stance_long,Filtered & Balanced
+20,0.956097480146007,stance_long,Filtered & Balanced
+21,0.957204078268539,stance_long,Filtered & Balanced
+22,0.9573262762217969,stance_long,Filtered & Balanced
+23,0.9575609806647994,stance_long,Filtered & Balanced
+24,0.9572493226879526,stance_long,Filtered & Balanced
+25,0.9566007336132918,stance_long,Filtered & Balanced
+26,0.9563870952562189,stance_long,Filtered & Balanced
+27,0.9571428438440196,stance_long,Filtered & Balanced
+28,0.9567713113845076,stance_long,Filtered & Balanced
+29,0.9557685810524057,stance_long,Filtered & Balanced
+1,0.9219240426867545,stance,Filtered & Balanced
+2,0.9159179932381603,stance,Filtered & Balanced
+3,0.9278621427692113,stance,Filtered & Balanced
+4,0.9301474478268718,stance,Filtered & Balanced
+5,0.931049041686941,stance,Filtered & Balanced
+6,0.9329350202445127,stance,Filtered & Balanced
+7,0.9312039512660255,stance,Filtered & Balanced
+8,0.9336434674389106,stance,Filtered & Balanced
+9,0.9314072013313538,stance,Filtered & Balanced
+10,0.9310749068935719,stance,Filtered & Balanced
+11,0.9295110724591299,stance,Filtered & Balanced
+12,0.9281821128070373,stance,Filtered & Balanced
+13,0.9292644949926816,stance,Filtered & Balanced
+14,0.9300074720152433,stance,Filtered & Balanced
+15,0.9303904167142131,stance,Filtered & Balanced
+16,0.9306151325648223,stance,Filtered & Balanced
+17,0.9311900104964723,stance,Filtered & Balanced
+18,0.9310819955822432,stance,Filtered & Balanced
+19,0.9310304349496306,stance,Filtered & Balanced
+20,0.9299538086019596,stance,Filtered & Balanced
+21,0.9301507556879808,stance,Filtered & Balanced
+22,0.9296032816874015,stance,Filtered & Balanced
+23,0.9299317997253747,stance,Filtered & Balanced
+24,0.9296551758913691,stance,Filtered & Balanced
+25,0.9297485010055574,stance,Filtered & Balanced
+26,0.9308164886712772,stance,Filtered & Balanced
+27,0.9311420297913087,stance,Filtered & Balanced
+28,0.9310734467171979,stance,Filtered & Balanced
+29,0.9314596464254712,stance,Filtered & Balanced
+1,0.8661034688995215,synth_short,Filtered & Balanced
+2,0.8346795258187664,synth_short,Filtered & Balanced
+3,0.8388089200477327,synth_short,Filtered & Balanced
+4,0.8264042726786315,synth_short,Filtered & Balanced
+5,0.833690036777221,synth_short,Filtered & Balanced
+6,0.8226322863584872,synth_short,Filtered & Balanced
+7,0.8209802114705942,synth_short,Filtered & Balanced
+8,0.8197378894303948,synth_short,Filtered & Balanced
+9,0.8242912565889176,synth_short,Filtered & Balanced
+10,0.8250811130871704,synth_short,Filtered & Balanced
+11,0.8217527534927265,synth_short,Filtered & Balanced
+12,0.8233833115569368,synth_short,Filtered & Balanced
+13,0.8205953837617329,synth_short,Filtered & Balanced
+14,0.8231056996258928,synth_short,Filtered & Balanced
+15,0.8211701169877258,synth_short,Filtered & Balanced
+16,0.8234593234642107,synth_short,Filtered & Balanced
+17,0.8219842026576422,synth_short,Filtered & Balanced
+18,0.8221979085295881,synth_short,Filtered & Balanced
+19,0.822355983048981,synth_short,Filtered & Balanced
+20,0.8230976297463479,synth_short,Filtered & Balanced
+21,0.8245955095827104,synth_short,Filtered & Balanced
+22,0.8245728566099549,synth_short,Filtered & Balanced
+23,0.8234737659488942,synth_short,Filtered & Balanced
+24,0.8221211123158079,synth_short,Filtered & Balanced
+25,0.8222832312603869,synth_short,Filtered & Balanced
+26,0.8228735676084558,synth_short,Filtered & Balanced
+27,0.8218614814135964,synth_short,Filtered & Balanced
+28,0.8209081125122335,synth_short,Filtered & Balanced
+29,0.8207403331210853,synth_short,Filtered & Balanced
+1,0.9357815928746611,synth,Filtered & Balanced
+2,0.9412434704057185,synth,Filtered & Balanced
+3,0.9398996821762641,synth,Filtered & Balanced
+4,0.9414985161107062,synth,Filtered & Balanced
+5,0.9465690282454005,synth,Filtered & Balanced
+6,0.9462623965438209,synth,Filtered & Balanced
+7,0.9476137397976859,synth,Filtered & Balanced
+8,0.9493285376106161,synth,Filtered & Balanced
+9,0.9495665397199073,synth,Filtered & Balanced
+10,0.9472887963994263,synth,Filtered & Balanced
+11,0.9457589576852515,synth,Filtered & Balanced
+12,0.9464203563987665,synth,Filtered & Balanced
+13,0.945267365157194,synth,Filtered & Balanced
+14,0.9448500902406707,synth,Filtered & Balanced
+15,0.9445276612981204,synth,Filtered & Balanced
+16,0.9453496759996469,synth,Filtered & Balanced
+17,0.9453938976845286,synth,Filtered & Balanced
+18,0.9457491267646322,synth,Filtered & Balanced
+19,0.9447085538736509,synth,Filtered & Balanced
+20,0.9452196979750443,synth,Filtered & Balanced
+21,0.945487954229678,synth,Filtered & Balanced
+22,0.9459387016233152,synth,Filtered & Balanced
+23,0.9464684829487414,synth,Filtered & Balanced
+24,0.9471389236575727,synth,Filtered & Balanced
+25,0.94630696590199,synth,Filtered & Balanced
+26,0.9467056045597684,synth,Filtered & Balanced
+27,0.9467087979295494,synth,Filtered & Balanced
+28,0.9469021952037637,synth,Filtered & Balanced
+29,0.9465297098299609,synth,Filtered & Balanced
+1,1.0,tweets_pop,Filtered & Balanced
+2,0.9861182041877524,tweets_pop,Filtered & Balanced
+3,0.9546800870226206,tweets_pop,Filtered & Balanced
+4,0.9540215442864084,tweets_pop,Filtered & Balanced
+5,0.952584280126653,tweets_pop,Filtered & Balanced
+6,0.9502238856986601,tweets_pop,Filtered & Balanced
+7,0.954425041494261,tweets_pop,Filtered & Balanced
+8,0.9581806434939915,tweets_pop,Filtered & Balanced
+9,0.9582329921733895,tweets_pop,Filtered & Balanced
+10,0.9567239140046424,tweets_pop,Filtered & Balanced
+11,0.9543885343655194,tweets_pop,Filtered & Balanced
+12,0.9490217024904822,tweets_pop,Filtered & Balanced
+13,0.9484366927190456,tweets_pop,Filtered & Balanced
+14,0.9485174996199468,tweets_pop,Filtered & Balanced
+15,0.9500543891378994,tweets_pop,Filtered & Balanced
+16,0.9491687047416795,tweets_pop,Filtered & Balanced
+17,0.9475504894012354,tweets_pop,Filtered & Balanced
+18,0.9492649416181507,tweets_pop,Filtered & Balanced
+19,0.9498541431467402,tweets_pop,Filtered & Balanced
+20,0.9507325690566784,tweets_pop,Filtered & Balanced
+21,0.9498132742143347,tweets_pop,Filtered & Balanced
+22,0.9507746257720088,tweets_pop,Filtered & Balanced
+23,0.9493642786387578,tweets_pop,Filtered & Balanced
+24,0.9476118552924981,tweets_pop,Filtered & Balanced
+25,0.9488634309643156,tweets_pop,Filtered & Balanced
+26,0.9475706662182732,tweets_pop,Filtered & Balanced
+27,0.9474845480641996,tweets_pop,Filtered & Balanced
+28,0.9481587182529154,tweets_pop,Filtered & Balanced
+29,0.9466143462758416,tweets_pop,Filtered & Balanced
+1,0.9395687822654115,tweets_rd,Filtered & Balanced
+2,0.9463773314203731,tweets_rd,Filtered & Balanced
+3,0.9463655610444601,tweets_rd,Filtered & Balanced
+4,0.9435921452102577,tweets_rd,Filtered & Balanced
+5,0.9502843235119282,tweets_rd,Filtered & Balanced
+6,0.9462939181402088,tweets_rd,Filtered & Balanced
+7,0.9517901833275247,tweets_rd,Filtered & Balanced
+8,0.9529556294262177,tweets_rd,Filtered & Balanced
+9,0.9569795232866094,tweets_rd,Filtered & Balanced
+10,0.954543756421033,tweets_rd,Filtered & Balanced
+11,0.9523515961262554,tweets_rd,Filtered & Balanced
+12,0.9519209415944926,tweets_rd,Filtered & Balanced
+13,0.9536995205916002,tweets_rd,Filtered & Balanced
+14,0.9554620146187169,tweets_rd,Filtered & Balanced
+15,0.9571699352893074,tweets_rd,Filtered & Balanced
+16,0.9537848299912816,tweets_rd,Filtered & Balanced
+17,0.9537686634286743,tweets_rd,Filtered & Balanced
+18,0.9537975475475475,tweets_rd,Filtered & Balanced
+19,0.9542756195635,tweets_rd,Filtered & Balanced
+20,0.9545062301378633,tweets_rd,Filtered & Balanced
+21,0.9538307190263893,tweets_rd,Filtered & Balanced
+22,0.9550597609561753,tweets_rd,Filtered & Balanced
+23,0.9542063188803198,tweets_rd,Filtered & Balanced
+24,0.9540493407554795,tweets_rd,Filtered & Balanced
+25,0.9552298537944724,tweets_rd,Filtered & Balanced
+26,0.9533809821614699,tweets_rd,Filtered & Balanced
+27,0.9535734418032524,tweets_rd,Filtered & Balanced
+28,0.9536504499234043,tweets_rd,Filtered & Balanced
+29,0.9524345617766254,tweets_rd,Filtered & Balanced

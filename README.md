@@ -1,0 +1,166 @@
+# promptstability
+
+Repository for the prompt-stability analyses, figures, and manuscript support files used in the current revision workflow.
+
+## Large-file note
+
+This GitHub-facing export is intentionally lightweight.
+
+Small and moderate-sized CSVs, plots, code, and manuscript files are included
+directly in the repo. The largest annotated CSVs have been moved into an
+external archive:
+
+- `FROZEN_EXPORT_large_files.tar`
+
+See [LARGE_FILES_MANIFEST.txt](/Users/christopherbarrie/Dropbox/nyu_projects/promptstability/FROZEN_EXPORT/LARGE_FILES_MANIFEST.txt:1) for the exact file list that lives in the external bundle.
+
+To restore the repo to a fully self-contained state after downloading the
+archive, extract it from the repository root:
+
+```bash
+tar -xf FROZEN_EXPORT_large_files.tar
+```
+
+Once an external hosting URL is available, add it here so users know where to
+download the archive before running the full pipeline.
+
+## Canonical rerun path
+
+The primary replication entrypoint is:
+
+```bash
+python replication_pipeline/00_run_full_replication.py
+```
+
+If you want the project virtual environment explicitly:
+
+```bash
+pssenv/bin/python replication_pipeline/00_run_full_replication.py
+```
+
+This canonical pipeline:
+
+- runs the numbered replication stages in `replication_pipeline/`
+- supports partial reruns via `--from-stage` and `--to-stage`
+- uses resumable skip behavior for the heavy rescoring stages by default
+- regenerates the current paper-facing raw/filtered plots and summary artifacts
+- now includes the refined raw-within overlay figure `plots/combined_within_overlay.png`
+- rebuilds the lightweight current outputs shipped in this repo
+- can use the external large-file archive to restore the full heavyweight rerun state when needed
+
+For full instructions, expected outputs, and partial-rerun examples, see [REPLICATION_RUNBOOK.md](/Users/christopherbarrie/Dropbox/nyu_projects/promptstability/REPLICATION_RUNBOOK.md:1).
+
+## Legacy scripts
+
+The original top-level scripts remain in place for historical continuity, but they are no longer the recommended rerun path.
+
+Examples:
+
+- `00_master.py`
+- `12_postpro_within_diagnostics.R`
+- `13_postpro_between_diagnostics.R`
+- `29_rescore_existing_intra_outputs.py`
+- `32_rescore_filtered_within_outputs.py`
+
+Each of these now carries a short header pointing to its canonical equivalent under `replication_pipeline/`.
+
+## Common commands
+
+Run only the current post hoc raw-within and raw-between refresh:
+
+```bash
+pssenv/bin/python replication_pipeline/00_run_full_replication.py --from-stage 3 --to-stage 7
+```
+
+Resume filtered-within rescoring and plotting after interruption:
+
+```bash
+pssenv/bin/python replication_pipeline/00_run_full_replication.py --from-stage 9 --to-stage 11 --skip-up-to-date
+```
+
+Refresh only the self-contained artifact bundle:
+
+```bash
+pssenv/bin/python replication_pipeline/00_run_full_replication.py --from-stage 19 --to-stage 19
+```
+
+## Development package
+
+[![PyPI](https://img.shields.io/pypi/v/promptstability.svg)](https://pypi.org/project/promptstability/)
+[![Tests](https://github.com/palaiole13/promptstability/actions/workflows/test.yml/badge.svg)](https://github.com/palaiole13/promptstability/actions/workflows/test.yml)
+[![Changelog](https://img.shields.io/github/v/release/palaiole13/promptstability?include_prereleases&label=changelog)](https://github.com/palaiole13/promptstability/releases)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/palaiole13/promptstability/blob/main/LICENSE)
+
+## Installation
+
+### PyPI installation
+
+```bash
+pip install promptstability
+```
+
+## Library example
+
+```python
+import pandas as pd
+from utils import PromptStabilityAnalysis, get_openai_api_key
+from openai import OpenAI
+import ollama
+
+df = pd.read_csv("data/manifestos.csv")
+df = df[df["scale"] == "Economic"]
+df = df.sample(max(1, int(0.1 * len(df))), random_state=123)
+data = list(df["sentence_context"].values)
+
+original_text = (
+    "The text provided is a UK party manifesto. "
+    "Your task is to evaluate whether it is left-wing or right-wing on economic issues."
+)
+prompt_postfix = "Respond with 0 for left-wing or 1 for right-wing."
+
+APIKEY = get_openai_api_key()
+client = OpenAI(api_key=APIKEY)
+
+def annotate_openai(text, prompt, temperature=0.1):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        temperature=temperature,
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": text},
+        ],
+    )
+    return "".join(choice.message.content for choice in response.choices)
+
+psa_openai = PromptStabilityAnalysis(annotation_function=annotate_openai, data=data)
+ka_openai_intra, annotated_openai_intra = psa_openai.intra_pss(
+    original_text,
+    prompt_postfix,
+    iterations=3,
+    plot=False,
+)
+
+def annotate_ollama(text, prompt, temperature=0.1):
+    response = ollama.chat(
+        model="deepseek-r1:8b",
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": text},
+        ],
+    )
+    return response["message"]["content"]
+
+psa_ollama = PromptStabilityAnalysis(annotation_function=annotate_ollama, data=data)
+ka_ollama_inter, annotated_ollama_inter = psa_ollama.inter_pss(
+    original_text,
+    prompt_postfix,
+    nr_variations=3,
+    temperatures=[0.1, 0.5],
+    iterations=1,
+    plot=False,
+)
+```
+
+## Development
+
+To contribute to the library package itself, send PRs to the library repo at [https://github.com/palaiole13/promptstability](https://github.com/palaiole13/promptstability).
