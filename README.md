@@ -2,6 +2,35 @@
 
 Repository for the prompt-stability analyses, figures, and manuscript support files used in the current revision workflow.
 
+## Quick start
+
+From a fresh clone, the recommended setup is:
+
+```bash
+bash setup_pssenv.sh
+Rscript install_r_dependencies.R
+```
+
+This creates the project-local Python environment at `pssenv/` and installs the
+R packages used by the replication scripts.
+
+Then download the heavyweight data bundle and extract it from the repository
+root:
+
+```bash
+tar -xf FROZEN_EXPORT_large_files.tar
+```
+
+After that, the main replication entrypoint is:
+
+```bash
+pssenv/bin/python replication_pipeline/00_run_full_replication.py
+```
+
+If you only want the lightweight shipped outputs and post hoc refreshes, you can
+start from a later stage; examples are given below and in
+[REPLICATION_RUNBOOK.md](REPLICATION_RUNBOOK.md).
+
 ## Large-file note
 
 This GitHub-facing export is intentionally lightweight.
@@ -25,18 +54,58 @@ archive, extract it from the repository root:
 tar -xf FROZEN_EXPORT_large_files.tar
 ```
 
-Once an external hosting URL is available, add it here so users know where to
-download the archive before running the full pipeline.
+## Setup details
+
+### Python
+
+The replication scripts assume a project-local virtual environment named
+`pssenv/`. The helper script:
+
+```bash
+bash setup_pssenv.sh
+```
+
+creates that environment and installs everything listed in
+[requirements.txt](requirements.txt), including:
+
+- `pandas`, `numpy`, `scipy`
+- `matplotlib`, `seaborn`, `plotly`
+- `simpledorff`
+- `transformers`, `sentence-transformers`, `sentencepiece`, `torch`
+- `openai`, `ollama`
+
+### R
+
+Install the required R packages with:
+
+```bash
+Rscript install_r_dependencies.R
+```
+
+This installs:
+
+- `reticulate`
+- `dplyr`, `ggplot2`, `readr`, `tidyr`
+- `cowplot`, `stringr`, `tidylog`
+- `knitr`, `kableExtra`
+
+### API and model prerequisites
+
+Some stages are entirely post hoc and need no API access. The following stages
+do require live model access:
+
+- stage `01`: raw annotations
+- stage `15`: DeepSeek/GPT capability comparison
+- stage `17`: updated-model robustness rerun
+
+For those stages you will need:
+
+- `OPENAI_API_KEY` set in your shell for OpenAI-backed analyses
+- Ollama installed and running for the local DeepSeek/Ollama analyses
 
 ## Canonical rerun path
 
 The primary replication entrypoint is:
-
-```bash
-python replication_pipeline/00_run_full_replication.py
-```
-
-If you want the project virtual environment explicitly:
 
 ```bash
 pssenv/bin/python replication_pipeline/00_run_full_replication.py

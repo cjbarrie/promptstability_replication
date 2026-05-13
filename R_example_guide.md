@@ -2,6 +2,16 @@
 
 This guide provides a complete walkthrough for using the `promptstability` Python package from R via `reticulate`, with Ollama as the LLM backend.
 
+If you are starting from the replication repository itself, the easiest first
+step is still:
+
+```bash
+bash setup_pssenv.sh
+Rscript install_r_dependencies.R
+```
+
+The guide below is a fuller manual walkthrough of the same idea from the R side.
+
 ## Overview
 
 This script demonstrates how to:

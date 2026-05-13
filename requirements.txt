@@ -1,19 +1,22 @@
-# Data manipulation
+# Core data and numerics
 pandas
-
-# Plotting and visualization
-matplotlib
-seaborn
-termcolor
-
-# NLP models and utilities
-transformers
-openai
-simpledorff
-
-# Numerical computations
 numpy
 scipy
 
-# Parallel processing and system utilities
+# Plotting
+matplotlib
+seaborn
+plotly
+
+# Prompt-stability scoring and model tooling
+simpledorff
+transformers
+sentence-transformers
+sentencepiece
+torch
+openai
+ollama
+
+# Utility packages used by legacy/helper scripts
+termcolor
 concurrent-log-handler

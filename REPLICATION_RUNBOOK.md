@@ -50,7 +50,20 @@ Recommended working directory:
 
 - the root of your cloned `promptstability_replication` repository
 
-Recommended Python executable:
+Recommended first-time setup:
+
+```bash
+bash setup_pssenv.sh
+Rscript install_r_dependencies.R
+```
+
+These two commands:
+
+- create the project-local Python virtual environment at `pssenv/`
+- install the Python dependencies in [requirements.txt](requirements.txt)
+- install the R packages used by the `Rscript` stages
+
+Recommended Python executable after setup:
 
 ```bash
 pssenv/bin/python
@@ -61,6 +74,21 @@ Recommended R entrypoint:
 ```bash
 Rscript
 ```
+
+Required Python packages for the shipped pipeline include:
+
+- `pandas`, `numpy`, `scipy`
+- `matplotlib`, `seaborn`, `plotly`
+- `simpledorff`
+- `transformers`, `sentence-transformers`, `sentencepiece`, `torch`
+- `openai`, `ollama`
+
+Required R packages include:
+
+- `reticulate`
+- `dplyr`, `ggplot2`, `readr`, `tidyr`
+- `cowplot`, `stringr`, `tidylog`
+- `knitr`, `kableExtra`
 
 ## API and model prerequisites
 
@@ -77,6 +105,11 @@ Those stages depend on the same credentials/model availability as the legacy scr
 - OpenAI credentials for OpenAI-backed analyses
 - local Ollama availability for the DeepSeek comparison
 
+Concretely:
+
+- export `OPENAI_API_KEY` before running stages `01`, `15`, or `17` if they use OpenAI
+- ensure `ollama serve` is running, and required local models are installed, before running the local DeepSeek/Ollama stages
+
 ## Canonical entrypoint
 
 Full canonical rerun:
@@ -84,6 +117,14 @@ Full canonical rerun:
 ```bash
 pssenv/bin/python replication_pipeline/00_run_full_replication.py
 ```
+
+Minimal end-user sequence from a fresh clone:
+
+1. `bash setup_pssenv.sh`
+2. `Rscript install_r_dependencies.R`
+3. download `FROZEN_EXPORT_large_files.tar`
+4. `tar -xf FROZEN_EXPORT_large_files.tar`
+5. run the desired `pssenv/bin/python replication_pipeline/...` command
 
 ## Stage order
 
